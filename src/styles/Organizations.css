@@ -1,0 +1,56 @@
+/* src/styles/Organizations.css */
+.organization-container {
+  padding: 1.5rem;
+}
+
+.organization-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .organization-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.organization-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.organization-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.organization-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.organization-search-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.organization-search-input {
+  flex-grow: 1;
+}
+
+.organization-details {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
